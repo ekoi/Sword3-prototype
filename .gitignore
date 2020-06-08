@@ -1,9 +1,10 @@
 # Compiled class file
 *.class
-
+.DS_Store
 # Log file
 *.log
-
+.idea/*
+*.iml
 # BlueJ files
 *.ctxt
 
@@ -13,11 +14,17 @@
 # Package Files #
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
+#*.zip
 *.tar.gz
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+target
+.idea
+
+# don't ignore the following dirs with jars
+!plugins/**/lib/*
+!src/test/resources/plugins/demo/lib/*
+!.mvn/wrapper/*
